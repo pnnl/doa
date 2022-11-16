@@ -1,10 +1,5 @@
 import pandas as pd
-# from utils import get_transformed_data, create_model
-from tensorflow.keras.models import load_model
 from sklearn.model_selection import train_test_split
-from tensorflow.keras.callbacks import EarlyStopping
-import os
-from tensorflow.keras.callbacks import ModelCheckpoint
 import random
 from tqdm import tqdm
 import pickle
@@ -14,60 +9,29 @@ import numpy as np
 from sklearn.metrics import r2_score, mean_squared_error
 def s2m(s): return Chem.MolFromSmiles(s)
 from sklearn.ensemble import ExtraTreesRegressor
-import seaborn as sns
 from sklearn.model_selection import KFold
 from pathlib import Path
 from sklearn.preprocessing import StandardScaler
 
-import keras
 import matplotlib.pyplot as plt
 import numpy as np
-from keras.regularizers import l2
-from keras.models import Sequential
-from keras.callbacks import EarlyStopping
-from keras.wrappers.scikit_learn import KerasRegressor
-from keras.layers.core import Dense, Dropout, Activation
-from sklearn.model_selection import RandomizedSearchCV
 
-from hyperopt import Trials, STATUS_OK, tpe
-# from hyperas import optim
-# from hyperas.distributions import choice, uniform
-
-import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 from sklearn.preprocessing import StandardScaler
-from keras.callbacks import ModelCheckpoint
 
-from keras.models import load_model
 from sklearn.metrics import r2_score
 import matplotlib.pyplot as plt
-# %matplotlib inline
 
-from scipy.stats import spearmanr
-from keras.initializers import random_normal, random_uniform
-# from keras.initializers import normal
 
 from rdkit import Chem
-from rdkit.Chem.Draw import IPythonConsole #Needed to show molecules
-from rdkit.Chem.Draw.MolDrawing import MolDrawing, DrawingOptions
 from sklearn.model_selection import KFold
 from scipy.stats import spearmanr
 from rdkit import Chem
 
-import os
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_absolute_error
 
-import pickle
-import json
 import pandas as pd
-#from utils import get_transformed_data, create_model
-# from keras.models import load_model
 from sklearn.model_selection import train_test_split
-# from keras.callbacks import EarlyStopping
-import os
-# from keras.callbacks import ModelCheckpoint
 import random
 from tqdm import tqdm
 import pickle
