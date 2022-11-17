@@ -1,3 +1,10 @@
+# Installation
+Go to the doa directory and type
+
+```
+pip install .
+```
+
 ## To get model errors for molecules
 
 ```

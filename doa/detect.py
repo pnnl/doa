@@ -82,28 +82,12 @@ def collect_prediction_results(df, detect_dir, save=False, nparts=4):
         with open(f'{detect_dir}/smiles_error_sup_et_{i}.pkl', 'rb') as f:
             fs.append(pickle.load(f))
 
-#     with open(f'./smiles_error_sup_et_{1}.pkl', 'rb') as f:
-#         f1 = pickle.load(f)
-
-#     with open(f'./smiles_error_sup_et_{2}.pkl', 'rb') as f:
-#         f2 = pickle.load(f)
-
-#     with open(f'./smiles_error_sup_et_{3}.pkl', 'rb') as f:
-#         f3 = pickle.load(f)
-
-#     with open(f'./smiles_error_sup_et_{4}.pkl', 'rb') as f:
-#         f4 = pickle.load(f)
-
     f = {}
     for i in df.smiles.values:
         all_v = [ftmp[i] for ftmp in fs]
         all_v = sum(all_v, [])
         f[i] = all_v
 
-#     f={}
-#     for i in df.smiles.values:
-#         all_v = f1[i]+f2[i]+f3[i]+f4[i]
-#         f[i] = all_v
 
     res=[]
     for k in f:
@@ -121,7 +105,7 @@ def collect_prediction_results(df, detect_dir, save=False, nparts=4):
     enpls['olness_nonsc'] = np.sqrt(enpls['means']**2 + enpls['sdev']**2)
 
     if save:
-        enpls.to_csv("./enpls.csv", index=False)
+        enpls.to_csv(f"{detect_dir}/enpls.csv", index=False)
 
     mols = list(f.keys())
     a = [len(f[i]) for i in mols]
@@ -459,7 +443,7 @@ def run_ol(part, calcs, df, features, save_path=None):
             pickle.dump(smiles_error, f)
     else:
     # with open('smiles_error_1000.pkl', 'wb') as f:
-        with open(f'smiles_error_sup_et_{part}.pkl', 'wb') as f:
+        with open(f'{save_path}/smiles_error_sup_et_{part}.pkl', 'wb') as f:
             pickle.dump(smiles_error, f)
 
     return smiles_error
