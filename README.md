@@ -1,5 +1,5 @@
 # Installation
-Go to the doa directory and type
+Go to the doa directory where setup.py is located and type,
 
 ```
 pip install .
