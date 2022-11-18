@@ -4,6 +4,10 @@ Go to the doa directory where setup.py is located and type,
 ```
 pip install .
 ```
+
+We provide a complete example in the tutorials/examples.ipynb
+
+
 # 2. Obtaining results
 #### 2.1 Run models to get prediction errors for molecules
 
