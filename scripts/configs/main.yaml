@@ -1,0 +1,6 @@
+---
+  data_path: /people/pana982/solubility/data/full_dataset/sets/train.csv
+  n_parts: 1
+  target_name: 'log_sol'
+  res_path: results/runs
+  n_runs: 2
