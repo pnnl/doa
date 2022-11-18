@@ -1,5 +1,5 @@
 import pandas as pd
-from doa.utils import run_ol
+from doa.detect import run_ol
 from doa.args import update_args
 import argparse
 
@@ -10,7 +10,8 @@ def run(args):
    df.reset_index(drop=True, inplace=True)
    features = df.drop(['smiles', args['target_name'] ], axis=1).columns.values
 
-   run_ol(args['run_id'], args['n_runs'], df, features, args['res_path']) 
+   run_ol(part=args['run_id'], n_runs=args['n_runs'], df=df, features=features, 
+         target_name=args['target_name'], res_path=args['res_path']) 
 
 
 

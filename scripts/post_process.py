@@ -1,5 +1,5 @@
 
-from doa.utils import find_olpercent
+from doa.detect import find_olpercent
 import argparse
 from doa.args import update_args
 
