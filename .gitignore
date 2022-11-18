@@ -1,5 +1,6 @@
 doa.egg-info
 build
-tutorials
+tutorials/results
+tutorials/sample_data
 __pycache__
 .ipynb_checkpoints
