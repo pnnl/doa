@@ -121,7 +121,7 @@ def find_olpercent(data_path,
     else:
         # enpls = process_detect_results(df, save_res=False)    
         olp_versus_r2 = pd.read_csv(f"{res_path}/ol_thresh_res/cv_results.csv")
-        enpls = pd.read_csv(f'{res_path}/enpls.csv')
+        enpls = pd.read_csv(f'{res_path}/errors.csv')
         
         
     return olp_versus_r2, enpls, df
@@ -195,7 +195,7 @@ def collect_prediction_results(df, res_path, save=False, nparts=4):
     enpls['olness_nonsc'] = np.sqrt(enpls['means']**2 + enpls['sdev']**2)
 
     if save:
-        enpls.to_csv(f"{res_path}/enpls.csv", index=False)
+        enpls.to_csv(f"{res_path}/errors.csv", index=False)
 
     mols = list(f.keys())
     a = [len(f[i]) for i in mols]

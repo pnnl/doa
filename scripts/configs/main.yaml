@@ -1,5 +1,5 @@
 ---
-  data_path: sample_data/mdm_data.csv
+  data_path: sample_data/train.csv
   n_parts: 1
   target_name: 'log_sol'
   res_path: results/runs

@@ -40,7 +40,13 @@ def create_dataset(csv_path, smiles_column, logs_column, save_path):
     return df_des
 
 
+def save_ols(res_path, th_file_id):
+    ols_path = os.path.join(res_path, 'ol_thresh_res')
+    df_ol = pd.read_csv(f"{ols_path}/outliers_olness_p{th_file_id}.csv")
+    df_nol = pd.read_csv(f"{ols_path}/non_outliers_olness_p{th_file_id}.csv")
 
+    df_ol.to_csv(f'{res_path}/outliers.csv', index=False)
+    df_nol.to_csv(f'{res_path}/non_outliers.csv', index=False)
 
 
 
