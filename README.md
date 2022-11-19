@@ -13,5 +13,5 @@ pip install .
 ```
 
 # 2. Obtaining results
-A complete example is given in the tutorials/examples.ipynb
+A complete example is given in the tutorials/1.getting_started.ipynb
 
