@@ -1,6 +1,9 @@
 doa.egg-info
 build
 tutorials/results
-tutorials/sample_data
+tutorials/sample_data/curated-solubility-dataset.csv  
+tutorials/sample_data/data.csv  
+tutorials/sample_data/des_data.csv  
+tutorials/sample_data/mdm_data.csv
 __pycache__
 .ipynb_checkpoints
