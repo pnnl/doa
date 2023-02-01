@@ -1,6 +1,11 @@
 # doa
 doa is a tool to find domains of applicability of machine learning models. These domains are expressed using the features that the model uses to represent the input data.
 
+![image info](./tutorials/fbf.png)
+|:--:|
+| <b>How the test predictions improve as we reomove data corresponding to 'difficult' domains identified by our method.</b>|
+
+
 # 1. Installation
 
 Cretae a conda environment,
