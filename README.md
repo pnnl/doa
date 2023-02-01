@@ -3,7 +3,7 @@ doa is a tool to find domains of applicability of machine learning models. These
 
 ![image info](./tutorials/fbf.png)
 |:--:|
-| <b>How the test predictions improve as we reomove data corresponding to 'difficult' domains identified by our method.</b>|
+| <b>How the test predictions improve as we remove data corresponding to 'difficult' domains identified by our method.</b>|
 
 
 # 1. Installation
