@@ -1,6 +1,8 @@
 # doa
 doa is a tool to find domains of applicability of machine learning models. These domains are expressed using the features that the model uses to represent the input data.
 
+The details of the method can be found in our manuscript at https://doi.org/10.26434/chemrxiv-2023-pmrfw-v2.
+
 ![image info](./tutorials/fbf.png)
 |:--:|
 | <b>How the test predictions improve as we remove data corresponding to 'difficult' domains identified by our method.</b>|
