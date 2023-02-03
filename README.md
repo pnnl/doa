@@ -1,7 +1,7 @@
 # doa
 doa is a tool to find domains of applicability of machine learning models. These domains are expressed using the features that the model uses to represent the input data.
 
-The details of the method can be found in our manuscript titled <h4>Outlier-Based Domain of Applicability Identification for Materials Property Prediction Models</h4> at https://doi.org/10.26434/chemrxiv-2023-pmrfw-v2.
+The details of the method can be found in our manuscript titled Outlier-Based Domain of Applicability Identification for Materials Property Prediction Models at https://doi.org/10.26434/chemrxiv-2023-pmrfw-v2.
 
 ![image info](./tutorials/fbf.png)
 |:--:|
